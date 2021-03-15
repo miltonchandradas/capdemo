@@ -6,7 +6,7 @@ service TechService {
     
 }
 
-annotate TechService.UXTeam with {
+annotate TechService.UXTeam with @odata.draft.enabled {
     ID        @(Common : {Label : 'ID'});
     firstName @(Common : {Label : 'First Name'});
     lastName  @(Common : {Label : 'Last Name'});
