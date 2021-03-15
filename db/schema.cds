@@ -1,7 +1,6 @@
 namespace db;
 using {cuid, managed} from '@sap/cds/common';
 
-annotate db.UXTeam with @fiori.draft.enabled;
 entity UXTeam : cuid, managed {
     firstName: String(100);
     lastName: String(100);
