@@ -1,0 +1,3 @@
+### GET UXTeam Members
+GET http://localhost:4004/tech/UXTeam
+
