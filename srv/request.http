@@ -1,3 +1,15 @@
 ### GET UXTeam Members
 GET http://localhost:4004/tech/UXTeam
 
+### ADD UXTeam Member
+POST http://localhost:4004/tech/UXTeam
+Content-Type: application/json;IEEE754Compatible=true
+
+{
+    "firstName"  : "Milton",
+    "lastName" : "Chandradas",
+    "age": 25,
+    "role": "UX Developer",
+    "salary": "9000.00",
+    "active": true
+}
