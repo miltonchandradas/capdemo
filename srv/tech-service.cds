@@ -7,7 +7,7 @@ service TechService {
 }
 
 annotate TechService.UXTeam with @odata.draft.enabled {
-    ID        @(Common : {Label : 'ID'});
+    ID        @(Common : {Label : 'ID'}); 
     firstName @(Common : {Label : 'First Name'});
     lastName  @(Common : {Label : 'Last Name'});
     age       @(Common : {Label : 'Age'});
@@ -24,7 +24,7 @@ annotate TechService.UXTeam with @(UI : {
         TypeName       : 'UXTeam',
         TypeNamePlural : 'UXTeam',
         Title          : {
-            $Type : 'UI.DataField',
+            $Type : 'UI.DataField', 
             Value : ID
         }
     },
@@ -63,21 +63,21 @@ annotate TechService.UXTeam with @(UI : {
         $Type  : 'UI.ReferenceFacet',
         Target : '@UI.FieldGroup#UXTeamDetail',
         Label  : 'UXTeam Member'
-    }],
+    }],  
     Facets                   : [{
         $Type  : 'UI.CollectionFacet',
-        Label  : 'UXTeam Member',
+        Label  : 'Member Info',
         Facets : [{
             $Type  : 'UI.ReferenceFacet',
             Target : '@UI.FieldGroup#Description',
             Label  : 'UXTeam Member Details'
         }, ]
-    }],
+    }], 
     FieldGroup #Description  : {Data : [
     {
         $Type : 'UI.DataField',
         Value : ID
-    },
+    }, 
     {
         $Type : 'UI.DataField',
         Value : firstName
@@ -104,5 +104,5 @@ annotate TechService.UXTeam with @(UI : {
         $Type : 'UI.DataField',
         Value : ID
     }
-    ]}
+    ]}  
 });
